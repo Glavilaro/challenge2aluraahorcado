@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  font-family: "courier";
+  font-weight: bold;
+
+  
+}
+
+body {
+  background-color: #9b111e;
+  background-image: url("https://i.pinimg.com/originals/d3/b1/5a/d3b15ab07f709124067319bf84a5e9aa.gif");
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+} 
+
+
+
+.header {
+  background-color: #9b111e;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+
+.header h1 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.dummy_input {
+  position: absolute;
+  top: -2000px;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.instructions h2 {
+ color:#ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.instructions li {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+.buttons_inputs_container {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
+#start_button {
+  font-size: 35px;
+  background-color: #9b111e;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 10px;
+  border-color:#ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.restart_button {
+  position: absolute;
+  top: 100px;
+  left: 320px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-Color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: #9b111e;
+  font-family: Arial;
+  text-align: center;
+  line-height: 100px;
+}
+
+#add_button {
+  font-size: 30px;
+  background-color: #9b111e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border-color:#ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#input_new_word {
+  width: 100%;
+  height: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#words_list {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+#show_words_list_link {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.started_message_show {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-Color: transparent;
+  border: none;
+  font-size: 50px;
+  color: #ffffff;
+  font-family: Arial;
+  text-align: center;
+  line-height: 100px;
+  transition: all 0.6s ease-in-out;
+}
+
+.you_are_acerted_message_show {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: #1ca728;
+  font-family: Arial;
+  text-align: center;a
+  line-height: 38px;
+  transition: all 0.4s ease-in-out;
+}
+
+.you_are_wrong_message_show {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: #f30a0a;
+  font-family: Arial;
+  text-align: center;
+  line-height: 38px;
+  transition: all 0.4s ease-in-out;
+}
+
+.you_repeated_letter_message_show {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: #f30a0a;
+  font-family: Arial;
+  text-align: center;
+  line-height: 38px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+#canvas {
+  display: none;
+  border: 1px solid #fff000;
+  margin: auto;
+}
+
+
+
+
+.footer {
+  position: inherit;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  background-color: #9b111e;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer a {
+  padding: 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  #canvas {
+    width: 100%;
+    height: 75vh;
+
+  }
+
+  .restart_button {
+    top: 13px;
+    left: 85px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-Color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #1ca728;
+    font-family: Arial;
+    text-align: center;
+    line-height: 100px;
+  }
+}
+
+
+
+@media screen and (min-width: 600px) {
+  #canvas {
+    width: 100%;
+    height: 90vh;
+
+  }
+
+  .restart_button {
+    top: 30px;
+    left: 85px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-Color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #1ca728;
+    font-family: Arial;
+    text-align: center;
+    line-height: 100px;
+  }
+}

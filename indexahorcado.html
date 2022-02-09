@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
+      rel="stylesheet"
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleahorcado.css?84"/>
+    <title>&#9733;EL AHORCADO&#9733;</title>
+  </head>
+  <body>
+    <div class="header">
+     
+      <div class="logo">
+        <img src="C:\Users\PC\Desktop\INDEX3.HTML/jygly.png" alt="logo" width="80"/>
+      </div>
+      <h1>&#9733;El Ahorcado&#9733;</h1>
+    </div>
+    <div class="container">
+      <!-- instructions -->
+      <div class="instructions">
+        <h2>&#9733;instrucciones del juego&#9733;</h2>
+        <ul>
+          <li>&#9733;solo letras en mayúscula&#9733;</li>
+          <li>&#9733;sin acentos ni caracteres especiales&#9733;</li>
+        </ul>
+      </div>
+      <div class="buttons_inputs_container">
+        <button id="start_button">&#9733;COMENZAR EL JUEGO&#9733;</button>
+        <input
+          type="text"
+          name=""
+          id="input_new_word"
+          placeholder="Escriba la nueva palabra"
+        />
+        <button id="add_button">&#9733;AGREGAR NUEVA PALABRA&#9733;</button>
+      </div>
+      <div id="words_list_container">
+        <a id="show_words_list_link">&#9733;Ver listado de palabras&#9733;</a>
+        <ul id="words_list"></ul>
+      </div>
+    </div>
+
+    
+    <div id="started_message" style="display: none;">
+      <h5>Juego Iniciado</h5>
+      <h6>Digita una letra</h6>
+    </div>
+
+   
+    <div id="you_are_acerted_message" style="display: none;">
+      <h5>¡Bien!</h5>
+    </div>
+
+    <!-- You Are wrong Message -->
+    <div id="you_are_wrong_message" style="display: none;">
+      <h5>¡PERDISTE!</h5>
+    </div>
+    
+    
+    <div id="you_repeated_letter_message" style="display: none;">
+      <h5>¡ELIGE OTRA OPCION!</h5>
+    </div>
+
+
+
+    <div id="canvas_container">
+      <canvas id="canvas" width="1000" height="800">
+      </canvas>
+    </div>
+
+    <div class="footer">
+      <p>
+        &copy;<a href="https://www.linkedin.com/in/GLADYSVILARO622"
+          >&#9733;gladys vilaro&#9733;</a
+        >
+      </p>
+    </div>
+    <script src="bancodepalabras.js?4"></script>
+    <script src="hangcanvas.js?125"></script>
+    <script src="hangman2.js?125"></script>
+  </body>
+</html>
